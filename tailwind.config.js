@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Anek Latin', 'sans-serif'],
+        'sans': ['Merriweather'],
       },
       colors: {
         'custom-text': '#054d42', // Define your custom text color
+        'project-green': '#74a84a'
       },
     },
   },

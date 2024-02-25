@@ -2,28 +2,10 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div className='container p-4 flex flex-col lg:flex-row justify-between mx-auto'>
-        <div>
-            <p>INSPIRING CHANGE</p>
-            <p>Empowering Futures Through Education</p>
-            <p>Join Jan Seva Sankalp Foundation in fostering personal growth, women’s empowerment, and community welfare for a brighter future.</p>
-            <button>Get Involved</button>
-            <div className='border-t-2 flex flex-row'>
-                <div className='boarder-r-2 border-black'>
-                    <p>100+</p>
-                    <p>Student Involved</p>
-                </div>
-                <div className='boarder-r-2'>
-                    <p>100+</p>
-                    <p>Volenteer</p>
-                </div>
-                <div>
-                    <p>100+</p>
-                    <p>Google Rating Involved</p>
-                </div>
-            </div>
-        </div>
-        <div>image</div>
+    <div className='p-4 flex flex-col mx-auto bg-cover lg:min-h-screen h-[300px]' style={{ maxHeight: 'calc(100vh - 82px)', backgroundImage: 'url("https://jansevasankalp.org/wp-content/uploads/2024/02/Banner.jpg")' }}>
+        <div className='mt-5 lg:mt-48 text-center text-[40px] lg:text-[80px] font-bold'>जन सेवा संकल्प</div>
+        <div className='text-center text-[30px] lg:text-[70px] font-medium'>Foundation</div>
+        <button className="mt-4 bg-project-green text-white py-2 px-6 w-fit mx-auto">EXPLORE</button>
     </div>
   )
 }

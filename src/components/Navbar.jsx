@@ -11,11 +11,9 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-      
-
         <div className="flex flex-row items-center text-white font-bold text-xl">
-        <img src={logo} alt="Logo" className="h-[50px] p-2" /> {/* Add your logo here */}
-        जन सेवा संकल्प फौंडेशन
+          <img src={logo} alt="Logo" className="h-[50px] p-2" /> {/* Add your logo here */}
+          जन सेवा संकल्प फौंडेशन
         </div>
         <div className="lg:hidden">
           <button 
@@ -40,20 +38,33 @@ const Navbar = () => {
         </div>
         <div className={`lg:flex lg:items-center lg:w-auto hidden`}>
           <ul className="lg:flex items-center justify-between">
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#home">Home</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">About</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">Services</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">Contact</a></li>
+            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="/">WHO ARE WE</a>
+            </li>
+            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</a></li>
+            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</a></li>
+            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</a></li>
           </ul>
         </div>
       </div>
       <div>
-      <ul className={`flex flex-col items-center ${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#home">Home</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">About</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">Services</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">Contact</a></li>
-          </ul>
+        <ul className={`flex flex-col items-center ${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
+          <li>
+            <a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#home">
+              WHO ARE WE
+            </a>
+            <ul className="absolute hidden bg-white text-gray-800 py-2 rounded-md mt-1">
+              <li>
+                <a className="block px-4 py-2 hover:bg-gray-200" href="#submenu1">Submenu 1</a>
+              </li>
+              <li>
+                <a className="block px-4 py-2 hover:bg-gray-200" href="#submenu2">Submenu 2</a>
+              </li>
+            </ul>
+          </li>
+          <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</a></li>
+          <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</a></li>
+          <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</a></li>
+        </ul>
       </div>
     </nav>
   );
