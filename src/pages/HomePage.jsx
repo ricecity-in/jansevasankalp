@@ -9,12 +9,13 @@ import Section2 from '../components/Section2'
 function HomePage() {
   return (
     <>
+    
       <Navbar/>
       <HeroSection/>
-      <Section2/>
+      {/* <Section2/>  */}
       <Section/>
-      <Body/>
-      <Footer/>
+    {/* <Body/> */}
+    <Footer/>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from "./../Images/logo.png"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,6 +41,7 @@ const Navbar = () => {
           <ul className="lg:flex items-center justify-between">
             <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="/">WHO ARE WE</a>
             </li>
+            <li><Link to="/vision" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md">VISION</Link></li>
             <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</a></li>
             <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</a></li>
             <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</a></li>
