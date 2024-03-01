@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Card = ({ image, title, subTitle, link }) => {
   return (
     <div className="bg-white rounded-tr-full">
-      <div className=" ">
+      <div className=" border rounded-tr-[50px]">
         <img
           src={image}
           alt="img"
@@ -21,14 +21,12 @@ const Card = ({ image, title, subTitle, link }) => {
   );
 };
 
-const Review = () => {
+const Review = ({stars, msg, name, img}) => {
   return (
-    <div className="bg-yellow-100 rounded-2xl p-4 w-full">
-      <p>⭐⭐⭐⭐</p>
+    <div className="bg-[#FFFEEA] rounded-2xl p-4 w-full border">
+      <p>{stars}</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem,
-        temporibus totam et hic doloremque dicta repellat placeat repellendus
-        natus?
+        {msg}
       </p>
       <div className="flex items-center gap-3 mt-5">
         <img
@@ -37,7 +35,7 @@ const Review = () => {
           className="w-8 h-8 rounded-full"
         />
         {/* userName */}
-        <p className="capitalize">user name</p>
+        <p className="capitalize">{name}</p>
       </div>
     </div>
   );
@@ -129,28 +127,28 @@ function Section() {
           {/* 3 cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 ">
             <Card
-              image="https://static.vecteezy.com/system/resources/previews/025/773/718/non_2x/ai-generated-portrait-of-a-fashion-man-photo.jpg"
+              image="https://img.freepik.com/free-vector/empowering-education_3446-308.jpg?t=st=1709319433~exp=1709323033~hmac=ed844009dca4e91114814e99e1ec91b7f7f517aa965739db51b98149dd212d9e&w=740"
               title="Education Empowerment"
               subTitle={
                 "Transforming lives through quality education initiatives for all age groups"
               }
-              link={"https://discord.com/"}
+              link={"#"}
             />
             <Card
-              image="https://eu-images.contentstack.com/v3/assets/bltcd74acc1d0a99f3a/blt7dc715fcd9324509/64b1609273ef23488c840278/exeter-ai.png"
+              image="https://img.freepik.com/free-photo/front-view-women-teaming-up-new-project_23-2148416410.jpg?w=1380&t=st=1709319487~exp=1709320087~hmac=b37246c630b3d91c08e29cfea72bdb59d8fe335b6d386dd0ba6249542328e5f9"
               title="Women's Empowerment"
               subTitle={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+                "Empowering women through skill building and mentoring programs"
               }
-              link={"google.com"}
+              link={"#"}
             />
             <Card
-              image="https://static.vecteezy.com/system/resources/previews/025/773/648/large_2x/ai-generated-portrait-of-a-fashion-man-photo.jpg"
+              image="https://img.freepik.com/free-photo/high-angle-friends-showing-hands-camera_23-2148308690.jpg?t=st=1709319692~exp=1709323292~hmac=0cca8c328f1565930aae828f8488838e614860b37c0003faee108cfd9b13ffe4&w=1380"
               title="Community Welfare"
               subTitle={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+                "Enhanching society through community driven welfare initiatives."
               }
-              link={"google.com"}
+              link={"#"}
             />
           </div>
         </section>
@@ -158,81 +156,75 @@ function Section() {
         {/* 4th section */}
         <section className="bg-white my-16 flex flex-col p-7 py-16 gap-10">
           <div className="">
-            <h4 className="text-yellow-400">Lorem ipsum dolor sit amet.</h4>
+            <h4 className="text-yellow-400">WHY SHOULD YOU SUPPORT US</h4>
             <h2 className="text-2xl sm:text-3xl mt-4 font-bold capitalize text-green-700">
-              Exlore our transformational progress
+              Discover Our Unique Value Propositions
             </h2>
           </div>
           <div className="flex flex-col md:flex-row gap-10 w-full ">
             <img
-              src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              className="rounded-[60px] object-cover w-[350px] max-h-[500px]"
+              src="https://img.freepik.com/free-photo/tourists-go-up-hill-sunrise_1150-19692.jpg?t=st=1709319753~exp=1709323353~hmac=2e2b8979edad305e9e899bf77fa7434352a27b07331acf4f83a2d9f12d543bc2&w=1380"
+              className="rounded-[30px] md:rounded-[60px] object-cover w-[350px] max-h-[500px]"
             />
             <img
-              src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              className="rounded-[60px] object-contain w-[800px] max-h-[500px] "
+              src="https://img.freepik.com/free-photo/helping-hands-volunteer-support-community-service-graphic_53876-64955.jpg?t=st=1709319780~exp=1709323380~hmac=36810f2c3a23460a0734bcea2af4090b9402f9d0033ab5d3d9b88ee9a024da12&w=1380"
+              className="rounded-[30px] md:rounded-[60px] object-contain w-[800px] max-h-[500px] "
             />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 p-5 gap-10">
             <div className="">
-              <p className="text-yellow-400">Lorem</p>
+              <p className="text-yellow-400">01</p>
               <p className="text-xl font-bold capitalize text-green-700">
-                transformational
+              Personal Growth
               </p>
               <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                maiores?
+                Empowering individuals to achieve personal growth and success in their endeavors.
               </p>
             </div>
             <div className="">
-              <p className="text-yellow-400">Lorem</p>
+              <p className="text-yellow-400">01</p>
               <p className="text-xl font-bold capitalize text-green-700">
-                transformational
+                Community Impact
               </p>
               <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                maiores?
+                Driving positive change through community welfare initiatives and programs
               </p>
             </div>
             <div className="">
-              <p className="text-yellow-400">Lorem</p>
+              <p className="text-yellow-400">03</p>
               <p className="text-xl font-bold capitalize text-green-700">
-                transformational
+                Innovation in Education
               </p>
               <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                maiores?
+                Offering innovative education programs that nurture skills and knowledge
               </p>
             </div>
             <div className="">
-              <p className="text-yellow-400">Lorem</p>
+              <p className="text-yellow-400">04</p>
               <p className="text-xl font-bold capitalize text-green-700">
-                transformational
+                Women's Empowerment
               </p>
               <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                maiores?
+                Dedicated to fostering growth and oppurtunities for women in all aspects of life.
               </p>
             </div>
             <div className="">
-              <p className="text-yellow-400">Lorem</p>
+              <p className="text-yellow-400">05</p>
               <p className="text-xl font-bold capitalize text-green-700">
-                transformational
+                Inclusivity & Diversity
               </p>
               <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                maiores?
+                Promoting inclusivity and diversity in all our programs and initiatives
               </p>
             </div>
             <div className="">
-              <p className="text-yellow-400">Lorem</p>
+              <p className="text-yellow-400">06</p>
               <p className="text-xl font-bold capitalize text-green-700">
-                transformational
+                Societal Well-bing
               </p>
               <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                maiores?
+                Enhancing society's quality of life through our welfare efforts and programs.
               </p>
             </div>
           </div>
@@ -242,23 +234,23 @@ function Section() {
         <section className="my-16 flex flex-col justify-center items-center p-7 gap-10">
           <div className="">
             <h4 className="text-yellow-400 sm:text-center ">
-              Lorem ipsum dolor sit amet.
+              JOURNEY IN IMAGES
             </h4>
             <h2 className="text-2xl sm:text-3xl font-bold capitalize text-green-700  sm:text-center">
-              Exlore our transformational progress
+              Explore Our Impactful Journey Though Images
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full justify-between ">
             <img
-              src="https://img.freepik.com/premium-photo/bangkok-thailand-08082022-lamborghini-luxury-super-car-fast-sports-premium-lighting-background-3d-illustration_67092-1599.jpg"
+              src="https://res.cloudinary.com/dwj3llorl/image/upload/v1709320168/workshop/WhatsApp_Image_2023-09-04_at_21.39.45_1_ucuqmo.jpg"
               className="w-full sm:w-[350px] rounded-3xl"
             />
             <img
-              src="https://img.freepik.com/premium-photo/bangkok-thailand-08082022-lamborghini-luxury-super-car-fast-sports-premium-lighting-background-3d-illustration_67092-1599.jpg"
+              src="https://res.cloudinary.com/dwj3llorl/image/upload/v1709320167/workshop/WhatsApp_Image_2023-08-25_at_16.55.20_1_on7nwc.jpg"
               className="w-full sm:w-[350px] rounded-3xl"
             />
             <img
-              src="https://img.freepik.com/premium-photo/bangkok-thailand-08082022-lamborghini-luxury-super-car-fast-sports-premium-lighting-background-3d-illustration_67092-1599.jpg"
+              src="https://res.cloudinary.com/dwj3llorl/image/upload/v1709320168/workshop/WhatsApp_Image_2023-09-04_at_21.20.54_1_mgyk6t.jpg"
               className="w-full sm:w-[350px] rounded-3xl"
             />
           </div>
@@ -268,20 +260,50 @@ function Section() {
         <section className="bg-white my-16 flex flex-col justify-center items-center p-7 py-16 gap-10">
           <div className="">
             <p className="text-yellow-400 sm:text-center ">
-              Lorem ipsum dolor sit amet.
+              Peoples Thoughts
             </p>
             <p className="text-2xl sm:text-3xl font-bold capitalize text-green-700  sm:text-center">
-              Exlore our transformational progress
+              What Our Supporters Say
             </p>
           </div>
           {/* reviews */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
+            <Review 
+            stars="⭐⭐⭐⭐⭐" 
+            msg="JanSeva Sankalp Foudation has transformed my life, providing education opportunities that I never thought possible" 
+            name="Vaibhav" 
+            img=""/>
+
+            <Review 
+            stars="⭐⭐⭐⭐⭐"
+            msg="The commitment of the foundetion to women's empowerment is truly inspiring and has made a significant impact on many lives"
+            name="Sima Thakur"
+            img=""
+            />
+
+            <Review 
+            stars="⭐⭐⭐⭐⭐"
+            msg="JanSeva Sankalp Foundation's dedication to community welfare is commendable, creating a positive change in society"
+            name="Nirmal"
+            img=""/>
+
+            <Review 
+            stars="⭐⭐⭐⭐⭐"
+            msg="Joing JanSeva Sankalp Foundation was profound decision, as i have withnessed firsthand the positive impact on society."
+            name="Kunal Gajapure"
+            img=""/>
+
+            <Review 
+            stars="⭐⭐⭐⭐⭐"
+            msg="The inclusive environment created by the foundation has help nurture growth and opportunities for all, promoting diversity."
+            name="Dipak Raut"
+            img=""/>
+
+            <Review 
+            stars="⭐⭐⭐⭐⭐"
+            msg="I applaud the foundation's efforts in driving innovation in education and skill development, truly making a difference"
+            name="Saurabh Bisen"
+            img=""/>
           </div>
         </section>
       </div>

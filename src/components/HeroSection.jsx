@@ -25,7 +25,7 @@ const HeroSection = () => {
       ></div>
       <div className="relative z-10 text-center pt-50px">
         {/* Your content goes here */}
-        <div className='mt-5 lg:mt-48 text-center text-[40px] lg:text-[90px] font-bold tracking-wider highlight-text text-shadow' >जन सेवा संकल्प</div>
+        <div className='mt-10 lg:mt-48 text-center text-[40px] lg:text-[90px] font-bold tracking-wider highlight-text text-shadow' >जन सेवा संकल्प</div>
         <div className='text-center text-[30px] lg:text-[70px] font-medium tracking-wide'>Foundation</div>
         <button className="mt-4 bg-project-green text-white py-2 px-6 w-fit mx-auto tracking-wide">EXPLORE</button>
       </div>
