@@ -39,33 +39,32 @@ const Navbar = () => {
         </div>
         <div className={`lg:flex lg:items-center lg:w-auto hidden`}>
           <ul className="lg:flex items-center justify-between">
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="/">WHO ARE WE</a>
-            </li>
+            <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="/">WHO ARE WE</Link></li>
             <li><Link to="/vision" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md">VISION</Link></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</a></li>
-            <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</a></li>
+            <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</Link></li>
+            <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</Link></li>
+            <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</Link></li>
           </ul>
         </div>
       </div>
       <div>
         <ul className={`flex flex-col items-center ${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
           <li>
-            <a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#home">
+            <Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#home">
               WHO ARE WE
-            </a>
+            </Link>
             <ul className="absolute hidden bg-white text-gray-800 py-2 rounded-md mt-1">
               <li>
-                <a className="block px-4 py-2 hover:bg-gray-200" href="#submenu1">Submenu 1</a>
+                <Link to="/" className="block px-4 py-2 hover:bg-gray-200" href="#submenu1">Submenu 1</Link>
               </li>
               <li>
-                <a className="block px-4 py-2 hover:bg-gray-200" href="#submenu2">Submenu 2</a>
+                <Link to="/" className="block px-4 py-2 hover:bg-gray-200" href="#submenu2">Submenu 2</Link>
               </li>
             </ul>
           </li>
-          <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</a></li>
-          <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</a></li>
-          <li><a className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</a></li>
+          <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#about">OUR WORKS</Link></li>
+          <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#services">ACHIEVEMENTS</Link></li>
+          <li><Link to="/" className="block lg:inline-block text-white hover:text-gray-300 px-3 py-2 rounded-md" href="#contact">MAKE A DIFFERENCE</Link></li>
         </ul>
       </div>
     </nav>

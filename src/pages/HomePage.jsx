@@ -12,9 +12,7 @@ function HomePage() {
     
       <Navbar/>
       <HeroSection/>
-      {/* <Section2/>  */}
       <Section/>
-    {/* <Body/> */}
     <Footer/>
     </>
   )

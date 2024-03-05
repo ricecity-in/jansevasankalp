@@ -20,7 +20,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('https://res.cloudinary.com/dwj3llorl/image/upload/v1709305845/WhatsApp_Image_2023-09-04_at_21.39.48_wvoaut.jpg')`, // Replace 'your-image.jpg' with the actual image URL
-          filter: 'blur(8px)' // Adjust blur amount as needed
+          filter: 'blur(5px)' // Adjust blur amount as needed
         }}
       ></div>
       <div className="relative z-10 text-center pt-50px">

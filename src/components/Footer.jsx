@@ -20,6 +20,7 @@ const Footer = () => {
             </div>
         </div>
       <div className="container mx-auto text-center">
+        <br/>
         <p className="text-sm">&copy; 2024 Jan Seva Sankalp Foundation All rights reserved</p>
       </div>
     </footer>
